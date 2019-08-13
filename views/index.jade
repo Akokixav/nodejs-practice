@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p This is my test 
+
+- var x = 5;
+div 
+  ul 
+    - for (var i=1; i<=x; i++){
+      li= i + ". Hello"
+      -}
